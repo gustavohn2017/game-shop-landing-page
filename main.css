@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/*Header CSS*/
+header {
+    position: relative;
+    padding: 16px 0;
+    background: linear-gradient(to bottom, #0e1833, #8e44ad); /* Gradiente do efeito noturno, céu azul escuro p/ roxo. */
+    color: #ecf0f1;
+}
+
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='64' height='64' fill='%23ffffff'%3E%3Ccircle cx='55' cy='14' r='1'/%3E%3Ccircle cx='39' cy='8' r='1'/%3E%3Ccircle cx='1' cy='12' r='1'/%3E%3Ccircle cx='455' cy='22' r='1'/%3E%3Ccircle cx='50' cy='40' r='1'/%3E%3Ccircle cx='15' cy='20' r='1'/%3E%3Ccircle cx='25' cy='57' r='1'/%3E%3Ccircle cx='22' cy='35' r='1'/%3E%3Ccircle cx='145' cy='25' r='1'/%3E%3Ccircle cx='55' cy='15' r='1'/%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* sobre a loja */
+
+.brands-list img{
+    height: 32px;
+    text-decoration: none;
+    padding-left: 32px;
+    margin-top: 12px;
+    
+}
+
+.brands-list li{
+    display: inline;
+}
+
+header .container, section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 32px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+    text-align: center;
+}
+section p{
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.div-sobre {
+    margin: 24px;
+    padding: 24px;
+    position: relative;
+    background: linear-gradient(to bottom, #0e1833, #8e44ad);
+    color: #ecf0f1;    
+}
+
+.div-sobre p {
+    background: rgba(255, 255, 255, 0.2); /* Fundo branco translúcido */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.img-sobre{
+    margin-right: 80px;
+}
+
+/* Contato & Sociais*/
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+
+}
+
+
+#contact .container{
+    display: block;
+}
+
+.fale-conosco{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+form input, 
+form textarea, 
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    color: #fff;
+}
+
+
+
+form textarea{
+    resize: none;
+    height: 120px;
+    
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #8e44ad;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgba(202, 16, 155, 0.637)
+}
+
+
+section, h3{
+ font-style: italic;
+ margin-bottom: 16px;
+}
+
+/* Rodapé */
+
+footer{
+    background: linear-gradient(to bottom, #0e1833, #8e44ad);
+    color: #fff;
+    padding: 16px;
+}
